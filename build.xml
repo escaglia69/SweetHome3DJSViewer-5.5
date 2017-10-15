@@ -198,8 +198,8 @@
   	<copy todir="install/viewer/SweetHome3DJSViewer-${version}/lib">
       <fileset dir="dist"/>
     </copy>
-  	<copy file="test/resources/CasaV3.sh3d" 
-  		  tofile="install/viewer/SweetHome3DJSViewer-${version}/default.sh3d"/> 
+  	<copy file="test/resources/Casa.sh3d" 
+  		  tofile="install/viewer/SweetHome3DJSViewer-${version}/Casa.sh3d"/> 
     <zip destfile="install/SweetHome3DJSViewer-${version}.zip">
       <zipfileset dir="install/viewer/SweetHome3DJSViewer-${version}"/>
       <zipfileset dir="install/viewer" includes="README.TXT, *.html"/>

@@ -42,15 +42,10 @@
 </head>
 
 <body>
-<div>
-  <!-- Copy the following button in your page, updating the default.sh3d URL and parameters if necessary -->
-  <!-- Mouse and keyboard navigation explained at 
-       http://sweethome3d.cvs.sf.net/viewvc/sweethome3d/SweetHome3D/src/com/eteks/sweethome3d/viewcontroller/resources/help/en/editing3DView.html 
-       You may also switch between aerial view and virtual visit with the space bar -->
-  <!-- For browser compatibility, see http://caniuse.com/webgl -->
-  <button onclick='viewHomeInOverlay("Casa.sh3d",               
+<script type="text/javascript">
+viewHomeInOverlay("Casa.sh3d",               
               {roundsPerMinute:    1,                              /* Rotation speed of the animation launched once home is loaded in rounds per minute, no animation if missing */ 
-               widthByHeightRatio: 4/3,                            /* Size ratio of the displayed canvas */
+               widthByHeightRatio: 16/9,                            /* Size ratio of the displayed canvas */
                navigationPanel: "none",                            /* Displayed navigation arrows, "none" or "default" for default one or an HTML string containing elements with data-simulated-key 
                                                                       attribute set "UP", "DOWN", "LEFT", "RIGHT"... to replace the default navigation panel, "none" if missing */ 
                aerialViewButtonText: "Aerial view",                /* Text displayed for aerial view radio button, no radio buttons if missing */ 
@@ -65,9 +60,8 @@
                readingModelText: "Model",                          /* Comment displayed while reading models */
                noWebGLSupportError: "No WebGL support",            /* Error message displayed if the browser do not support WebGL */
                checkShutters: false
-              })'>View home</button>
-</div>
-
+              })
+</script>
 <div style="position: absolute; bottom: 5px; text-align: center; width: 95%; z-index: -1">
   <a href="http://www.sweethome3d.com">Sweet Home 3D</a> JS Viewer / Version 5.5 - Distributed under GNU General Public License
 </div>
